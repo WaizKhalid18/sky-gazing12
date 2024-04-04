@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+  
+}
+
+.fixed-header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fixed-header .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.fixed-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.fixed-header nav ul li {
+    margin-right: 20px;
+}
+
+.fixed-header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.fixed-header nav ul li a:hover {
+    color: #ffc107;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.product-text .readmore,
+.apple-text .readmore {
+    margin-top: 0;
+}
+
+  
+  
+  .pic1 {
+    width: 100%;
+    height: auto; /* This ensures the image maintains its aspect ratio */
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+    overflow: hidden; /* Adding this to clear any potential floats */
+    background-color: #3a3e3f;
+    
+  }
+  .container {
+   width: 100%;
+}
+  
+  .product-info {
+    display: flex;
+    align-items: center;
+      margin-top: 100px;
+    justify-content: center;
+    gap: 100px;
+  }
+  .product-text{
+    color: rgb(73, 69, 69);
+    margin-top: 100px;
+  }
+  .product-text h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:rgb(0, 0, 0);
+  }
+  
+  .overview {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-style: oblique;
+  }
+  
+  .productpara {
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .headphone2 {
+    filter: drop-shadow(5px 5px 5px black);
+    transition: 1s;
+  }
+  .headphone2 img {
+    width: 500px;
+    margin-left: 20px;
+    transition:1s;
+    display:block;
+    margin-top: 150px;
+  }
+  
+  .headphone2:hover {
+    transform:scale(1.1);
+    z-index:2;
+    cursor: pointer;
+  }
+  
+  .readmore {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .readmore {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    transition: ease-out 0.3s;
+    outline: none;
+    position: relative;
+    z-index: 1;
+  background-color: rgb(251, 59, 59);
+  margin-top: 20px;
+  }
+  
+  .readmore:hover {
+    color: rgb(251, 59, 59);
+    cursor: pointer;
+    border-radius: 25px;
+  
+  }
+  
+  .readmore:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: white;
+    border-radius: 25px;
+  
+  }
+  
+  .readmore:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 25px;
+  
+  }
+  
+  .videoo{
+    width: 100%; 
+    height:800px ;
+  }
+   
+
+  .Apple-W1 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: center;
+    gap: 100px;
+    
+  }
+  
+  .apple-text {
+    color: rgb(73, 69, 69);
+    margin-right: 50px;
+  }
+  .apple-text h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:rgb(0, 0, 0);
+  }
+  
+  .custom-comfort {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-style: oblique;
+  }
+  
+  .apple-para {
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .pic3 img {
+    width: 500px;
+    height: auto;
+    border-radius: 25px;
+  }
+  
+  iframe {
+   display: flex;
+   align-self: center;
+   justify-self: center;
+   margin: 0 auto;
+   width: 100%;
+   margin-top:50px;
+  }
+  
+  
+  
+  .Feel-your-music {
+    position:relative;
+  }
+  
+  .feelyourmusic-text {
+    position:absolute;
+    right:8%;
+    top: 25%;
+    text-align: right;
+    color: rgb(255, 255, 255);
+  }
+  
+  .feelyourmusic-text h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color:black;
+  }
+  
+  .feel-para {
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  
+  .colors {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .colors-text {
+    color: rgb(79, 79, 79);
+    margin-bottom: 50px;
+  }
+  
+  
+  .second {
+    margin-top: 69px;
+  }
+
+  .team {
+    background: #fff;
+    padding: 200px 0px;
+  }
+  
+  .team .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team .member .member-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .team .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+  }
+  
+  .team .member .social a {
+    transition: color 0.3s;
+    color: #151515;
+    margin: 0 3px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: ease-in-out 0.3s;
+    color: #484848;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .team .member .social a:hover {
+    color: #151515;
+    background: #ffc451;
+  }
+  
+  .team .member .social i {
+    font-size: 18px;
+    line-height: 0;
+  }
+  
+  .team .member .member-info {
+    padding: 25px 15px;
+  }
+  
+  .team .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #151515;
+  }
+  
+  .team .member .member-info span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #aaaaaa;
+  }
+  
+  .team .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+  }
+  
+  .team .member:hover .social {
+    opacity: 1;
+    bottom: 15px;
+  }
+  
+  
+  
+
+  section {
+    padding: 60px;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    padding-top: 120px;
+  }
+  
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    width: 1100px;
+    height: 1px;
+    display: inline-block;
+    background: #ffde9e;
+    margin: 4px 10  px;
+  }
+  
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #151515;
+  }
+
+  
